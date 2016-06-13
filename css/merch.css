@@ -1,0 +1,11 @@
+/*
+** Section 1: Variables
+** Section 2: Media Queries
+** Section 3: Globals
+** Section 4: Page Templates
+*/
+
+.header {
+  background: red;
+  background-size: cover;
+}

@@ -15,11 +15,26 @@
 </head>
 
 
-<body>
-
-    <div class="container">
+<body class="section-{{ segment_1 or "home" }}">
+    {{ if hero_image  }}
+        {{ assets:hero_image }}
+             <div class="header" style="background-image: url({{ url }});background-size:cover;">
+            
+        {{ /assets:hero_image }}
+        {{ partial:nav }}
+        </div>
+    {{ /if }}
+    {{ else}}
+        {{ partial:nav }}
+    {{ /else }}
         {{ template_content }}
-    </div>
+    
+
+
+    <footer class="">
+        <p class="footer">&copy; {{ now format="Y" }} {{ author_name }}</p>
+        <p class="footer-sub">Custom theme built on Statamic</p>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
