@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container__content {
+	margin-top: -50px;
+	width: 75%;
+	max-width: 850px;
+}
+
+.container__item {
+	background-color: $background--transparent;
+	padding: 3rem;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+
+}

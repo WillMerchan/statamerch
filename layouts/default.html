@@ -10,30 +10,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Another awesome Statamic site">
     <title>{{ title or site_title }}</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="{{ theme:css }}">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Oswald:700" rel="stylesheet">
 </head>
 
 
-<body class="section-{{ segment_1 or "home" }}">
-    {{ if hero_image  }}
+<body class="section--{{ segment_1 or "home" }}">
+    {{ if homepage  }}
         {{ assets:hero_image }}
-             <div class="header" style="background-image: url({{ url }});background-size:cover;">
-            
+            <header class="header" style="background-image: url({{ url }});">
         {{ /assets:hero_image }}
         {{ partial:nav }}
+        <div class="header__content">
+        <div class="header__logo">
+            {{ assets:logo }}
+                <img src="{{ url}}">
+            {{/assets:logo}}
         </div>
+        <div class="header__text">
+            <h1 class="header__text--title">{{ header_title }}</h1>
+            <h2 class="header__text--subtitle">{{ header_subtitle }}</h2>
+        </div>
+        </div>
+        <div class="empty__container"><br/></div>
+        </header>
+
     {{ /if }}
-    {{ else}}
+    {{ else }}
         {{ partial:nav }}
     {{ /else }}
+   
         {{ template_content }}
     
 
 
-    <footer class="">
-        <p class="footer">&copy; {{ now format="Y" }} {{ author_name }}</p>
-        <p class="footer-sub">Custom theme built on Statamic</p>
+    <footer class="footer">
+        <p class="footer__attribution">&copy; {{ now format="Y" }} {{ author_name }}</p>
+        <p class="footer__menu">Custom theme built on Statamic</p>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

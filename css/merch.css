@@ -5,7 +5,129 @@
 ** Section 4: Page Templates
 */
 
+/*** VARIABLES ***/
+
+/*** GLOBALS ***/
+
+html {
+  font-size: 16px;
+}
+
+/*** IMPORTS ***/
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container__content {
+  margin-top: -50px;
+  width: 75%;
+  max-width: 850px;
+}
+
+.container__item {
+  background-color: rgba(250, 250, 250, 0.95);
+  padding: 3rem;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(1, 28, 21, 0.25);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar__menu {
+  padding: 0;
+  margin-left: 2.5rem;
+}
+
+.navbar__menu--active {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.navbar__menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbar__menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar__social {
+  padding: 0;
+  margin-right: 2.5rem;
+}
+
+.navbar__social svg {
+  fill: #ffffff;
+  width: 40px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbar__social svg:hover {
+  fill: #cccccc;
+}
+
+.navbar__social li a {
+  padding: 0 8px;
+}
+
 .header {
-  background: red;
   background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__text {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__text--title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.header__text--subtitle {
+  font-family: 'Bree Serif', serif;
 }

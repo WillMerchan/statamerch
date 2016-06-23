@@ -1,0 +1,27 @@
+.header {
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+
+	&__logo {
+		width: 200px;
+	}
+
+	&__text {
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+
+		&--title {
+			font-family: 'Oswald', sans-serif;
+			font-weight: 700;
+			font-size: 4rem;
+		}
+
+		&--subtitle {
+			font-family: 'Bree Serif', serif;
+		}
+	}
+}

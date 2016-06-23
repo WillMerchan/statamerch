@@ -1,4 +1,18 @@
 <div class="container">
+<div class="container__content">
+	<article class="container__item">
     {{ content }}
+    </article>
+	<article class="container__item">
+		{{ collection:blog scope="tag" limit="3" }}
+			{{ partial:block }}
+		{{ /collection:blog }}
+	</article>
+	<article class="container__item">
+		{{ collection:portfolio scope="tag" limit="3" }}
+			{{ partial:block }}
+		{{ /collection:portfolio }}
+	</article>
+	</div>
 </div>
 
