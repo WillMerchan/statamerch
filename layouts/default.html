@@ -9,51 +9,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Another awesome Statamic site">
-    <title>{{ title or site_title }}</title>
+    <title>{{ title }} || {{ general:site_name }}</title>
     <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="{{ theme:css }}">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Oswald:700" rel="stylesheet">
 </head>
 
-
-<body class="section--{{ segment_1 or "home" }}">
-    {{ if homepage  }}
-        {{ assets:hero_image }}
-            <header class="header" style="background-image: url({{ url }});">
-        {{ /assets:hero_image }}
-        {{ partial:nav }}
-        <div class="header__content">
-        <div class="header__logo">
-            {{ assets:logo }}
-                <img src="{{ url}}">
-            {{/assets:logo}}
-        </div>
-        <div class="header__text">
-            <h1 class="header__text--title">{{ header_title }}</h1>
-            <h2 class="header__text--subtitle">{{ header_subtitle }}</h2>
-        </div>
-        </div>
-        <div class="empty__container"><br/></div>
-        </header>
-
-    {{ /if }}
-    {{ else }}
-        {{ partial:nav }}
-    {{ /else }}
+<body>
    
-        {{ template_content }}
-    
-
+    {{ template_content }}
 
     <footer class="footer">
-        <p class="footer__attribution">&copy; {{ now format="Y" }} {{ author_name }}</p>
-        <p class="footer__menu">Custom theme built on Statamic</p>
+        <p class="footer__copyright">&copy; {{ now format="Y" }}, {{ general:site_owner }}</p>
+        <p class="footer__attribution">Theme by <a href="https://github.com/WillMerchan/statamerch">Will Merchan</a> built on <a href="http://statamic.com">Statamic</a></p>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="{{ theme:js }}"></script>
+    <script src="site/themes/merch/js/forms.js"></script>
+    <script src="site/themes/merch/js/animation.js"></script>
+    <script src="site/themes/merch/js/buttons.js"></script>
+    <script src="site/themes/merch/js/initial.js"></script>
+    <script src="site/themes/merch/js/jquery.easing.1.3.js"></script>
+    <script src="site/themes/merch/js/jquery.hammer.js"></script>
+    <script src="site/themes/merch/js/materialbox.js"></script>
+    <script src="site/themes/merch/js/transitions.js"></script>
+    <script src="site/themes/merch/js/buttons.js"></script>
+    <script src="site/themes/merch/js/bin/materialize.js"></script>
 
 </body>
 
