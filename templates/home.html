@@ -7,13 +7,13 @@
     {{ /assets:profile_image }}
     {{ content }}
     </article>
-	<article class="container__item">
+	<article class="container__item container__item--featured">
 	<h2>Latest Writing</h2>
 		{{ collection:blog scope="tag" limit="3" }}
 			{{ partial:block }}
 		{{ /collection:blog }}
 	</article>
-	<article class="container__item">
+	<article class="container__item container__item--featured">
 	<h2>Featured Projects</h2>
 		{{ collection:portfolio scope="tag" limit="3" }}
 			{{ partial:block }}
