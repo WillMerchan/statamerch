@@ -1,3 +1,4 @@
+{{ partial:header-top-color }}
 <section class="regular">
 
 	<header>
@@ -24,13 +25,13 @@
 
 		{{ content }}
 
-		{{ relate:tags as="tags" }}
+		{{ relate:categories as="categories" }}
             <ul class="tags">
-			{{ tags }}
+			{{ categories }}
 				<li><a href="{{ url }}">{{ title }}</a></li>
-			{{ /tags }}
+			{{ /categories }}
             </ul>
-		{{ /relate:tags }}
+		{{ /relate:categories }}
 	</article>
 
 </section>

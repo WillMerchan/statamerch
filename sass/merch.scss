@@ -5,20 +5,22 @@
 ** Section 4: Page Templates
 */
 
-/*** VARIABLES ***/
-$background: #f2f2f2;
-$background--dark: navy;
-$background--transparent: rgba(255,255,255,0.95);
-$primary: #123bbb;
-$secondary: #84DE69; 
-$text: #333333;
 
-$title-serif: 'Bree Serif', serif;
-$title-sans: 'Oswald', sans-serif;
+/*** IMPORTS ***/
+@import 'global/variables';
+@import 'components/layout';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/alerts';
+@import 'components/block';
+@import 'components/portfolio';
 
 /*** GLOBALS ***/
 html {
 	font-size:16px;
+	font-family: $body-sans
 }
 
 footer {
@@ -35,12 +37,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: #333;
-}
 
-/*** IMPORTS ***/
-@import 'components/layout';
-@import 'components/nav';
-@import 'pages/home';
-@import 'components/header';
-@import 'components/forms';
-@import 'components/buttons';
+	p {
+		font-family: $body-sans;
+	}
+}

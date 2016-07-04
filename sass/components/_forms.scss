@@ -788,7 +788,7 @@ textarea.materialize-textarea {
 
   // Focused input style
   &:focus:not([readonly]) {
-    border-bottom: 1px solid $input-focus-color;
+    border-bottom: 2px solid $input-focus-color;
     box-shadow: 0 1px 0 0 $input-focus-color;
   }
 
@@ -800,17 +800,10 @@ textarea.materialize-textarea {
   // Valid Input Style
   &.valid,
   &:focus.valid {
-    border-bottom: 1px solid $input-success-color;
+    border-bottom: 2px solid $input-success-color;
     box-shadow: 0 1px 0 0 $input-success-color;
   }
 
-  // Custom Success Message
-  &.valid + label:after,
-  &:focus.valid + label:after {
-    content: attr(data-success);
-    color: $input-success-color;
-    opacity: 1;
-  }
 
   // Invalid Input Style
   &.invalid,

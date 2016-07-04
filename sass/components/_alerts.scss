@@ -1,0 +1,20 @@
+.alert {
+	padding: 1rem;
+	border-radius: 3px;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	text-align: center;
+
+	&--danger {
+		background-color: #FFCDD2;
+		border: 1px solid #F44336;
+		color: #B71C1C;
+	}
+
+	&--success {
+		background-color: #C8E6C9;
+		border: 1px solid #4CAF50;
+		color: #1B5E20;
+	}
+}

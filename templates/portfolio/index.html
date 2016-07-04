@@ -1,10 +1,10 @@
 {{ partial:header-top }}
 <section class="container">
-	<div class="container__content">
-		<article class="container__item">
+	<div class="container__content container__content--first">
+		<div class="portfolio">
 			{{ entries scope="tag" }}
 				{{ partial:block }}
 			{{ /entries }}
-		</article>
+		</div>
 	</div>
 </section>

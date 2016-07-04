@@ -1,42 +1,33 @@
 {{ partial:header-top }}
 <section class="container">
-  <div class="container__content">
-    <article class="container__item">
-
-      {{ content }}
-
-      {{ form:create in="contact" }}
-      {{ if errors }}
-        <div class="alert alert--danger">
-          {{ errors }}
-          {{ value }}<br>
-          {{ /errors }}
-        </div>
-      {{ /if }}
-      {{ if success }}
-        <div class="alert alert--success">
-          Form was submitted successfully.
-        </div>
-      {{ /if }}
-
-      <div class="input-field">
-          <input type="text" name="name" value="{{ old:name }}" class="form-control" id="name"/>
-          <label class="active" for="name">Name</label>
+  <article class="container__content container__content--first">
+    {{ content }}
+    {{ form:create in="contact" }}
+    {{ if errors }}
+      <div class="alert alert--danger">
+        {{ errors }}
+        {{ value }}<br>
+        {{ /errors }}
       </div>
-
-      <div class="input-field">
-          <input type="text" name="email" value="{{ old:email }}" class="form-control" id="name"/>
-          <label class="active" for="email">Email</label>
+    {{ /if }}
+    {{ if success }}
+      <div class="alert alert--success">
+        Form was submitted successfully.
       </div>
-
-      <div class="input-field">
-          <textarea name="message" class="materialize-textarea" id="name">{{ old:message }}</textarea>
-          <label class="active" for="message">Message</label>
-      </div>
-
-          <button class="button button--primary">Submit</button>
-       {{ /form:create }}
-
-    </article>
-  </div>
+    {{ /if }}
+    <div class="input-field">
+        <input type="text" name="name" value="{{ old:name }}" class="form-control" id="name"/>
+        <label class="active" for="name">Name</label>
+    </div>
+    <div class="input-field">
+        <input type="text" name="email" value="{{ old:email }}" class="form-control" id="name"/>
+        <label class="active" for="email">Email</label>
+    </div>
+    <div class="input-field">
+        <textarea name="message" class="materialize-textarea" id="name">{{ old:message }}</textarea>
+        <label class="active" for="message">Message</label>
+    </div>
+        <button class="button button--primary">Submit</button>
+     {{ /form:create }}
+  </article>
 </section>

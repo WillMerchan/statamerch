@@ -1,24 +1,25 @@
 {{ partial:header-top }}
 <div class="container">
-<div class="container__content">
-	<article class="container__item container__item--about">
+
+	<article class="container__content container__content--first container__content--about">
 	{{ assets:profile_image }}
             <img src="{{ url}}">
     {{ /assets:profile_image }}
     {{ content }}
     </article>
-	<article class="container__item container__item--featured">
+	<article class="container__content container__content--featured">
 	<h2>Latest Writing</h2>
-		{{ collection:blog scope="tag" limit="3" }}
+		{{ collection:blog scope="tag" limit="2" }}
 			{{ partial:block }}
 		{{ /collection:blog }}
 	</article>
-	<article class="container__item container__item--featured">
+	<article class="container__content container__content--featured">
 	<h2>Featured Projects</h2>
-		{{ collection:portfolio scope="tag" limit="3" }}
-			{{ partial:block }}
-		{{ /collection:portfolio }}
+		<div class="portfolio">
+			{{ collection:portfolio scope="tag" limit="3" }}
+				{{ partial:block-portfolio }}
+			{{ /collection:portfolio }}
+		</div>
 	</article>
-	</div>
 </div>
 
