@@ -5,14 +5,18 @@
 
 	&__item {
 		width: 280px;
-		text-decoration: none;
-		transition: $transition-regular;
-		border-radius: 3px;
-		box-shadow: $shadow-1;
 		margin: 0 10px 10px 10px;
+		
+		&__wrapper {
+			box-shadow: 0 1px 10px rgba(0,0,0,0.12), 0 1px 6px rgba(0,0,0,0.2);
+			text-decoration: none;
+			transition: $transition-regular;
+			display: block;
+			border-radius: 3px;
 
-		&:hover {
-			box-shadow: $shadow-2;
+			&:hover {
+				box-shadow: 0 3px 12px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.3);
+			}
 		}
 
 		&__title {
@@ -38,22 +42,27 @@
 			min-height: 120px;
 			filter: none;
 			transition: $transition-regular;
-			p {
-				margin: 0;
-				color: $text;
-				opacity: 0;
-				transition: $transition-regular;
-			}
 			
-			&:before {
-				content: "";
-			}
 			&:hover {
 				 filter: hue-rotate(90deg);
-				 opacity: 0.5;
+				 //opacity: 0.5;
 			}
-			&:hover p {
-				opacity: 1;
+		}
+
+		p {
+				color: $text;
+				text-align: center;
+			}
+
+		&__tags {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0 4px;
 			}
 		}
 	}

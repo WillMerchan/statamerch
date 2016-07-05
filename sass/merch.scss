@@ -1,13 +1,8 @@
-/*
-** Section 1: Variables
-** Section 2: Media Queries
-** Section 3: Globals
-** Section 4: Page Templates
-*/
-
-
-/*** IMPORTS ***/
+/*** GLOBAL ***/
+@import 'global/normalize';
 @import 'global/variables';
+
+/*** COMPONENTS ***/
 @import 'components/layout';
 @import 'components/nav';
 @import 'components/header';
@@ -17,7 +12,7 @@
 @import 'components/block';
 @import 'components/portfolio';
 
-/*** GLOBALS ***/
+/*** SHAME ***/
 html {
 	font-size:16px;
 	font-family: $body-sans

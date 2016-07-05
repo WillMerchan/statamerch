@@ -1,10 +1,12 @@
-<a href="{{ url }}" class="portfolio__item">
-		<div class="portfolio__item__title">
-			<h3>{{ title }}</h3>
-		</div>
-		{{ assets:featured_image }}
-		<div class="portfolio__item__content" style="background: url({{ url }});">
-		{{ /assets:featured_image }}
-			<p>{{ content strip_tags="img|a|p" safe_truncate="300" ensure_right="..." }}</p>
-		</div>
-	</a>
+<div  class="portfolio__item">
+<a href="{{ url }}" class="portfolio__item__wrapper">
+	<div class="portfolio__item__title">
+		<h3>{{ title }}</h3>
+	</div>
+	{{ assets:featured_image }}
+	<div class="portfolio__item__content" style="background: url({{ url }});">
+	{{ /assets:featured_image }}
+	</div>
+</a>
+<p>{{ summary strip_tags="img|a|p" safe_truncate="300"}}</p>
+</div>

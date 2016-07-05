@@ -1,11 +1,10 @@
 {{ partial:header-top-color }}
-<section class="regular">
-
+<section class="container">
+	<article class="container__content container__content--first">
 	<header>
 		<div class="meta clearfix">
 			<div class="author">
 				<div class="pull-left">
-					<a href="" class="name">{{ author_name }}</a>
 					<span class="length">{{ content | read_time }} minute read</span>
 				</div>
 			</div>
@@ -13,11 +12,9 @@
 				{{ date format="F j, Y" }}
 			</div>
 		</div>
-		<h1>{{ title }}</h1>
-		{{ subtitle wrap="h2" }}
 	</header>
 
-	<article class="content">
+	
 
 		{{ if intro_image }}
 			<p><img src="{{ intro_image | url }}" class="intro-image"></p>
