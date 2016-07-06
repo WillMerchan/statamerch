@@ -3428,8 +3428,8 @@ label {
 .portfolio {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -3493,6 +3493,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
