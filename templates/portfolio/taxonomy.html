@@ -1,0 +1,14 @@
+{{ partial:header-top-color }}
+<section class="container">
+	<div class="container__content container__content--first">
+		<div class="portfolio">
+		    {{ collection:portfolio taxonomy="true" scope="tag" }}
+		        {{ if no_results }}
+		            <p>No "{{ segment_3 }}" posts.</p>
+		        {{ else }}
+		            {{ partial:block-portfolio }}
+		        {{ /if }}
+		    {{ /collection:portfolio }}
+		</div>
+	</div>
+</section>

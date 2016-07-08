@@ -1,20 +1,14 @@
 {{ partial:header-top-color }}
 <section class="container">
 	<article class="container__content container__content--first">
-	<header>
-		<div class="meta clearfix">
-			<div class="author">
-				<div class="pull-left">
-					<span class="length">{{ content | read_time }} minute read</span>
-				</div>
-			</div>
-			<div class="date">
+		<div class="meta">
+			<div class="meta__date">
 				{{ date format="F j, Y" }}
 			</div>
+			<div class="meta__length">
+				{{ content | read_time }} minute read
+			</div>
 		</div>
-	</header>
-
-	
 
 		{{ if intro_image }}
 			<p><img src="{{ intro_image | url }}" class="intro-image"></p>
@@ -24,12 +18,12 @@
 
 		{{ relate:tags as="tags" }}
             <ul class="tags">
+            <span class="tags__title">Read more about: </span>
 			{{ tags }}
 				<li><a href="{{ url }}">{{ title }}</a></li>
 			{{ /tags }}
             </ul>
 		{{ /relate:tags }}
 	</article>
-
 </section>
 

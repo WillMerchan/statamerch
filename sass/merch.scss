@@ -1,5 +1,6 @@
 /*** GLOBAL ***/
 @import 'global/normalize';
+@import 'global/media-queries';
 @import 'global/variables';
 
 /*** COMPONENTS ***/
@@ -11,6 +12,7 @@
 @import 'components/alerts';
 @import 'components/block';
 @import 'components/portfolio';
+@import 'components/content';
 
 /*** SHAME ***/
 html {
@@ -35,5 +37,6 @@ body {
 
 	p {
 		font-family: $body-sans;
+		line-height: 1.4rem;
 	}
 }

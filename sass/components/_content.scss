@@ -1,0 +1,47 @@
+.meta {
+	display: flex;
+	justify-content: space-between;
+	color: $text-med-gray;
+}
+
+.tags {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-top: 40px;
+	align-items: center;
+
+	&__title {
+		color: $text-med-gray;
+		font-weight: bold;
+		margin-right: 6px;
+	}
+
+	li {
+		background: rgba($primary, 0.25);
+		border-radius: 6px;
+		border: 1px solid $primary;
+		margin: 0 6px;
+		transition: $transition-regular;
+
+		&:hover {
+			background: rgba($primary,0.95);
+		}
+
+		a {
+			text-decoration: none;
+			padding: 5px 15px;
+			color: $primary;
+			&:hover {
+				color: white;
+			}
+
+		}
+	}
+}
+blockquote {
+	border-left: 3px solid $secondary;
+	padding-left: 20px;
+	margin-left: 15px;
+	color: $text-dark-gray;
+}

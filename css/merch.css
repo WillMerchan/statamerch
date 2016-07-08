@@ -464,11 +464,10 @@ th {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container__content h2 {
-  margin-top: -20px;
-  font-size: 2rem;
-  letter-spacing: 0.04rem;
-  color: #444;
+.container__content h2,
+.container__content h3 {
+  color: #666666;
+  font-family: "Bree Serif", serif;
 }
 
 .container__content--first {
@@ -498,6 +497,8 @@ th {
   margin-left: -48px;
   margin-right: -48px;
   margin-top: -48px;
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
 }
 
 .navbar {
@@ -826,230 +827,6 @@ th {
 
 .red-text.text-accent-4 {
   color: #D50000 !important;
-}
-
-.pink {
-  background-color: #e91e63 !important;
-}
-
-.pink-text {
-  color: #e91e63 !important;
-}
-
-.pink.lighten-5 {
-  background-color: #fce4ec !important;
-}
-
-.pink-text.text-lighten-5 {
-  color: #fce4ec !important;
-}
-
-.pink.lighten-4 {
-  background-color: #f8bbd0 !important;
-}
-
-.pink-text.text-lighten-4 {
-  color: #f8bbd0 !important;
-}
-
-.pink.lighten-3 {
-  background-color: #f48fb1 !important;
-}
-
-.pink-text.text-lighten-3 {
-  color: #f48fb1 !important;
-}
-
-.pink.lighten-2 {
-  background-color: #f06292 !important;
-}
-
-.pink-text.text-lighten-2 {
-  color: #f06292 !important;
-}
-
-.pink.lighten-1 {
-  background-color: #ec407a !important;
-}
-
-.pink-text.text-lighten-1 {
-  color: #ec407a !important;
-}
-
-.pink.darken-1 {
-  background-color: #d81b60 !important;
-}
-
-.pink-text.text-darken-1 {
-  color: #d81b60 !important;
-}
-
-.pink.darken-2 {
-  background-color: #c2185b !important;
-}
-
-.pink-text.text-darken-2 {
-  color: #c2185b !important;
-}
-
-.pink.darken-3 {
-  background-color: #ad1457 !important;
-}
-
-.pink-text.text-darken-3 {
-  color: #ad1457 !important;
-}
-
-.pink.darken-4 {
-  background-color: #880e4f !important;
-}
-
-.pink-text.text-darken-4 {
-  color: #880e4f !important;
-}
-
-.pink.accent-1 {
-  background-color: #ff80ab !important;
-}
-
-.pink-text.text-accent-1 {
-  color: #ff80ab !important;
-}
-
-.pink.accent-2 {
-  background-color: #ff4081 !important;
-}
-
-.pink-text.text-accent-2 {
-  color: #ff4081 !important;
-}
-
-.pink.accent-3 {
-  background-color: #f50057 !important;
-}
-
-.pink-text.text-accent-3 {
-  color: #f50057 !important;
-}
-
-.pink.accent-4 {
-  background-color: #c51162 !important;
-}
-
-.pink-text.text-accent-4 {
-  color: #c51162 !important;
-}
-
-.purple {
-  background-color: #9c27b0 !important;
-}
-
-.purple-text {
-  color: #9c27b0 !important;
-}
-
-.purple.lighten-5 {
-  background-color: #f3e5f5 !important;
-}
-
-.purple-text.text-lighten-5 {
-  color: #f3e5f5 !important;
-}
-
-.purple.lighten-4 {
-  background-color: #e1bee7 !important;
-}
-
-.purple-text.text-lighten-4 {
-  color: #e1bee7 !important;
-}
-
-.purple.lighten-3 {
-  background-color: #ce93d8 !important;
-}
-
-.purple-text.text-lighten-3 {
-  color: #ce93d8 !important;
-}
-
-.purple.lighten-2 {
-  background-color: #ba68c8 !important;
-}
-
-.purple-text.text-lighten-2 {
-  color: #ba68c8 !important;
-}
-
-.purple.lighten-1 {
-  background-color: #ab47bc !important;
-}
-
-.purple-text.text-lighten-1 {
-  color: #ab47bc !important;
-}
-
-.purple.darken-1 {
-  background-color: #8e24aa !important;
-}
-
-.purple-text.text-darken-1 {
-  color: #8e24aa !important;
-}
-
-.purple.darken-2 {
-  background-color: #7b1fa2 !important;
-}
-
-.purple-text.text-darken-2 {
-  color: #7b1fa2 !important;
-}
-
-.purple.darken-3 {
-  background-color: #6a1b9a !important;
-}
-
-.purple-text.text-darken-3 {
-  color: #6a1b9a !important;
-}
-
-.purple.darken-4 {
-  background-color: #4a148c !important;
-}
-
-.purple-text.text-darken-4 {
-  color: #4a148c !important;
-}
-
-.purple.accent-1 {
-  background-color: #ea80fc !important;
-}
-
-.purple-text.text-accent-1 {
-  color: #ea80fc !important;
-}
-
-.purple.accent-2 {
-  background-color: #e040fb !important;
-}
-
-.purple-text.text-accent-2 {
-  color: #e040fb !important;
-}
-
-.purple.accent-3 {
-  background-color: #d500f9 !important;
-}
-
-.purple-text.text-accent-3 {
-  color: #d500f9 !important;
-}
-
-.purple.accent-4 {
-  background-color: #aa00ff !important;
-}
-
-.purple-text.text-accent-4 {
-  color: #aa00ff !important;
 }
 
 .deep-purple {
@@ -2796,108 +2573,16 @@ th {
   color: transparent !important;
 }
 
-/* ==========================================================================
-   Materialize variables
-   ========================================================================== */
-
-/**
- * Table of Contents:
- *
- *  1. Colors
- *  2. Badges
- *  3. Buttons
- *  4. Cards
- *  5. Collapsible
- *  6. Chips
- *  7. Date Picker
- *  8. Dropdown
- *  10. Forms
- *  11. Global
- *  12. Grid
- *  13. Navigation Bar
- *  14. Side Navigation
- *  15. Photo Slider
- *  16. Spinners | Loaders
- *  17. Tabs
- *  18. Tables
- *  19. Toasts
- *  20. Typography
- *  21. Footer
- *  22. Flow Text
- *  23. Collections
- *  24. Progress Bar
- */
-
 /* 1. Colors
-   ========================================================================== */
-
-/* 2. Badges
    ========================================================================== */
 
 /* 3. Buttons
    ========================================================================== */
 
-/* 4. Cards
-   ========================================================================== */
-
-/* 5. Collapsible
-   ========================================================================== */
-
-/* 6. Chips
-   ========================================================================== */
-
-/* 7. Date Picker
-   ========================================================================== */
-
-/* 8. Dropdown
-   ========================================================================== */
-
-/* 9. Fonts
-   ========================================================================== */
-
 /* 10. Forms
    ========================================================================== */
 
-/* 11. Global
-   ========================================================================== */
-
 /* 12. Grid
-   ========================================================================== */
-
-/* 13. Navigation Bar
-   ========================================================================== */
-
-/* 14. Side Navigation
-   ========================================================================== */
-
-/* 15. Photo Slider
-   ========================================================================== */
-
-/* 16. Spinners | Loaders
-   ========================================================================== */
-
-/* 17. Tabs
-   ========================================================================== */
-
-/* 18. Tables
-   ========================================================================== */
-
-/* 19. Toasts
-   ========================================================================== */
-
-/* 20. Typography
-   ========================================================================== */
-
-/* 21. Footer
-   ========================================================================== */
-
-/* 22. Flow Text
-   ========================================================================== */
-
-/* 23. Collections
-   ========================================================================== */
-
-/* 24. Progress Bar
    ========================================================================== */
 
 /* Text Inputs + Textarea
@@ -2951,65 +2636,6 @@ textarea.materialize-textarea {
   box-shadow: none;
   box-sizing: content-box;
   transition: all 0.3s;
-}
-
-input:not([type]):disabled,
-input:not([type])[readonly="readonly"],
-input[type=text]:disabled,
-input[type=text][readonly="readonly"],
-input[type=password]:disabled,
-input[type=password][readonly="readonly"],
-input[type=email]:disabled,
-input[type=email][readonly="readonly"],
-input[type=url]:disabled,
-input[type=url][readonly="readonly"],
-input[type=time]:disabled,
-input[type=time][readonly="readonly"],
-input[type=date]:disabled,
-input[type=date][readonly="readonly"],
-input[type=datetime]:disabled,
-input[type=datetime][readonly="readonly"],
-input[type=datetime-local]:disabled,
-input[type=datetime-local][readonly="readonly"],
-input[type=tel]:disabled,
-input[type=tel][readonly="readonly"],
-input[type=number]:disabled,
-input[type=number][readonly="readonly"],
-input[type=search]:disabled,
-input[type=search][readonly="readonly"],
-textarea.materialize-textarea:disabled,
-textarea.materialize-textarea[readonly="readonly"] {
-  color: rgba(0, 0, 0, 0.26);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
-}
-
-input:not([type]):disabled + label,
-input:not([type])[readonly="readonly"] + label,
-input[type=text]:disabled + label,
-input[type=text][readonly="readonly"] + label,
-input[type=password]:disabled + label,
-input[type=password][readonly="readonly"] + label,
-input[type=email]:disabled + label,
-input[type=email][readonly="readonly"] + label,
-input[type=url]:disabled + label,
-input[type=url][readonly="readonly"] + label,
-input[type=time]:disabled + label,
-input[type=time][readonly="readonly"] + label,
-input[type=date]:disabled + label,
-input[type=date][readonly="readonly"] + label,
-input[type=datetime]:disabled + label,
-input[type=datetime][readonly="readonly"] + label,
-input[type=datetime-local]:disabled + label,
-input[type=datetime-local][readonly="readonly"] + label,
-input[type=tel]:disabled + label,
-input[type=tel][readonly="readonly"] + label,
-input[type=number]:disabled + label,
-input[type=number][readonly="readonly"] + label,
-input[type=search]:disabled + label,
-input[type=search][readonly="readonly"] + label,
-textarea.materialize-textarea:disabled + label,
-textarea.materialize-textarea[readonly="readonly"] + label {
-  color: rgba(0, 0, 0, 0.26);
 }
 
 input:not([type]):focus:not([readonly]),
@@ -3194,83 +2820,6 @@ textarea.materialize-textarea + label:after {
   transform: translateY(-140%);
 }
 
-.input-field .prefix {
-  position: absolute;
-  width: 3rem;
-  font-size: 2rem;
-  transition: color .2s;
-}
-
-.input-field .prefix.active {
-  color: #26a69a;
-}
-
-.input-field .prefix ~ input,
-.input-field .prefix ~ textarea {
-  margin-left: 3rem;
-  width: 92%;
-  width: calc(100% - 3rem);
-}
-
-.input-field .prefix ~ textarea {
-  padding-top: .8rem;
-}
-
-.input-field .prefix ~ label {
-  margin-left: 3rem;
-}
-
-@media only screen and (max-width: 992px) {
-  .input-field .prefix ~ input {
-    width: 86%;
-    width: calc(100% - 3rem);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .input-field .prefix ~ input {
-    width: 80%;
-    width: calc(100% - 3rem);
-  }
-}
-
-/* Search Field */
-
-.input-field input[type=search] {
-  display: block;
-  line-height: inherit;
-  padding-left: 4rem;
-  width: calc(100% - 4rem);
-}
-
-.input-field input[type=search]:focus {
-  background-color: #fff;
-  border: 0;
-  box-shadow: none;
-  color: #444;
-}
-
-.input-field input[type=search]:focus + label i,
-.input-field input[type=search]:focus ~ .mdi-navigation-close,
-.input-field input[type=search]:focus ~ .material-icons {
-  color: #444;
-}
-
-.input-field input[type=search] + label {
-  left: 1rem;
-}
-
-.input-field input[type=search] ~ .mdi-navigation-close,
-.input-field input[type=search] ~ .material-icons {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  color: transparent;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: .3s color;
-}
-
 /* Textarea */
 
 textarea {
@@ -3286,16 +2835,6 @@ textarea.materialize-textarea {
   /* prevents text jump on Enter keypress */
   resize: none;
   min-height: 3rem;
-}
-
-.hiddendiv {
-  display: none;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  /* future version of deprecated 'word-wrap' */
-  padding-top: 1.2rem;
-  /* prevents text jump on Enter keypress */
 }
 
 input {
@@ -3436,7 +2975,7 @@ label {
 
 .portfolio__item {
   width: 280px;
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 30px 10px;
 }
 
 .portfolio__item__wrapper {
@@ -3465,7 +3004,6 @@ label {
 }
 
 .portfolio__item__content {
-  padding: 10px;
   border-radius: 0 0 3px 3px;
   display: -ms-flexbox;
   display: flex;
@@ -3473,10 +3011,20 @@ label {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 120px;
+  min-height: 185px;
   -webkit-filter: none;
   filter: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.portfolio__item__content img {
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+
+.portfolio__item__content img:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 
 .portfolio__item__content:hover {
@@ -3501,6 +3049,59 @@ label {
 
 .portfolio__item__tags li {
   margin: 0 4px;
+}
+
+.meta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #888888;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tags__title {
+  color: #888888;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.tags li {
+  background: rgba(91, 196, 190, 0.25);
+  border-radius: 6px;
+  border: 1px solid #5bc4be;
+  margin: 0 6px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tags li:hover {
+  background: rgba(91, 196, 190, 0.95);
+}
+
+.tags li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #5bc4be;
+}
+
+.tags li a:hover {
+  color: white;
+}
+
+blockquote {
+  border-left: 3px solid #c8dc64;
+  padding-left: 20px;
+  margin-left: 15px;
+  color: #666666;
 }
 
 /*** SHAME ***/
@@ -3532,4 +3133,5 @@ body {
 
 body p {
   font-family: "Hind Madurai", sans-serif;
+  line-height: 1.4rem;
 }

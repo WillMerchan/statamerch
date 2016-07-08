@@ -5,7 +5,7 @@
 
 	&__item {
 		width: 280px;
-		margin: 0 10px 10px 10px;
+		margin: 0 10px 30px 10px;
 		
 		&__wrapper {
 			box-shadow: 0 1px 10px rgba(0,0,0,0.12), 0 1px 6px rgba(0,0,0,0.2);
@@ -34,14 +34,22 @@
 		}
 
 		&__content {
-			padding: 10px;
 			border-radius: 0 0 3px 3px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			min-height: 120px;
+			min-height: 185px;
 			filter: none;
 			transition: $transition-regular;
+
+			img {
+				width: 100%;
+				border-radius: 0 0 3px 3px;
+
+				&:hover {
+					filter: none;
+				}
+			}
 			
 			&:hover {
 				 filter: hue-rotate(90deg);

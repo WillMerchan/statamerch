@@ -18,6 +18,7 @@
 
 		{{ relate:categories as="categories" }}
             <ul class="tags">
+            <span class="tags__title">View other projects related to: </span>
 			{{ categories }}
 				<li><a href="{{ url }}">{{ title }}</a></li>
 			{{ /categories }}
