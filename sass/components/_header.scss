@@ -43,6 +43,9 @@
 			font-size: 4.4rem;
 			letter-spacing: .3rem;
 			margin: 0;
+			@include media('<desktop') {
+				font-size: 2rem;
+			}
 		}
 
 		&--subtitle {

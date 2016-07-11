@@ -80,3 +80,17 @@
 
 	</ul>	
 </nav>
+<button id="mm-menu-toggle" class="mm-menu-toggle menu-toggle--mobile">Toggle Menu</button>
+<nav id="mm-menu" class="mm-menu navbar--mobile">
+  <div class="mm-menu__header">
+    <h2 class="mm-menu__title">Nick Salloum</h2>
+  </div>
+  <ul class="mm-menu__items">
+  {{ nav from="/" include_home="true" scope="tag" }}
+      <li class="mm-menu__item"{{ if is_current or is_parent }} class="navbar__menu--active"{{ /if }}>
+          <a href="{{ url }}" class="mm-menu__link">{{ tag:nav_title or title }}
+          </a>
+      </li>
+  {{ /nav }}
+  </ul>
+</nav><!-- /nav -->
