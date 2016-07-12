@@ -12,7 +12,10 @@
 	margin-bottom: 50px;
 	border-radius: 6px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.20);
-	
+	@include media('<tablet') {
+		padding: 1.5rem;
+	}
+
 	 h2, h3 {
 	 	color: $text-dark-gray;
 	 	font-family: $title-serif;
@@ -26,11 +29,18 @@
 	&--about {
 		display: flex;
 		align-items: center;
+		@include media('<=tablet') {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 
 		img {
 			width: 180px;
 			border-radius: 50%;
 			margin-right: 3rem;
+			@include media('<=tablet') {
+				margin-right: 0;
+			}
 			}
 	}
 
@@ -47,6 +57,10 @@
 			margin-top: -48px;
 			font-size: 2rem;
 			letter-spacing: 0.04rem;
+			@include media('<tablet') {
+				margin-left: -24px;
+				margin-right: -24px;
+			}
 		}
 	}
 }

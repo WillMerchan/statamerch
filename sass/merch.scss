@@ -18,7 +18,10 @@
 /*** SHAME ***/
 html {
 	font-size:16px;
-	font-family: $body-sans
+	font-family: $body-sans;
+	@include media('<=phone') {
+		font-size: 14px;
+	}
 }
 
 footer {

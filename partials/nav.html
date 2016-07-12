@@ -7,6 +7,9 @@
 		    </li>
 		{{ /nav }}
 	</ul>
+
+	<button id="mm-menu-toggle" class="mm-menu-toggle menu-toggle--mobile">Toggle Menu</button>
+
 	<ul class="navbar__social">
 		    <li>
 		    	<a href="https://twitter.com/{{ general:twitter_handle }}">
@@ -80,11 +83,17 @@
 
 	</ul>	
 </nav>
-<button id="mm-menu-toggle" class="mm-menu-toggle menu-toggle--mobile">Toggle Menu</button>
 <nav id="mm-menu" class="mm-menu navbar--mobile">
+{{ if segment_1 }}
   <div class="mm-menu__header">
-    <h2 class="mm-menu__title">Nick Salloum</h2>
+  	{{ general}}
+  	{{assets:site_logo }}
+  	<img class="menu__logo" src="{{ url}}">
+  	{{/assets:site_logo }}
+  	{{/general}}
+    <h2 class="mm-menu__title">{{ general:site_owner }}</h2>
   </div>
+  {{/if}}
   <ul class="mm-menu__items">
   {{ nav from="/" include_home="true" scope="tag" }}
       <li class="mm-menu__item"{{ if is_current or is_parent }} class="navbar__menu--active"{{ /if }}>
